@@ -22,10 +22,7 @@ const Mobileimg = styled.img`
 `;
 const Profile = styled.div``;
 
-const Profilelinks = styled.div`
-
-	
-`;
+const Profilelinks = styled.div``;
 
 const SocialSection = styled.img`
 	@media screen and (max-width: 768px) {
@@ -49,7 +46,9 @@ const Iconimg = styled.img`
 		display: none;
 	}
 `;
-
+const SlackName = styled.div`
+	display: none;
+`;
 const ProfileName = styled.div`
 	display: flex;
 	margin-top: 24px;
@@ -68,10 +67,11 @@ const ProfileName = styled.div`
 const Profilepage = () => {
 	return (
 		<Profile>
-			<ProfileImg src={profileimg} />
+			<ProfileImg src={profileimg} className='profile_img' />
 			<Iconimg src={Icon} />
 			<Mobileimg src={mobileimg} />
-			<ProfileName>Victor Ozokwelu</ProfileName>
+			<ProfileName className='twitter'>Victor Ozokwelu</ProfileName>
+			<SlackName className='slack'>Victor Ozokwelu</SlackName>
 			<Profilelinks className='profilelinks'>
 				<ul>
 					<li>
