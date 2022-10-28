@@ -1,0 +1,9 @@
+.App {
+	text-align: center;
+}
+html {
+	scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+	display: none; /* for Chrome, Safari, and Opera */
+}
